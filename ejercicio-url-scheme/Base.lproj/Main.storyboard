@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,26 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwH-UK-wUR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwH-UK-wUR">
+                                <rect key="frame" x="0.0" y="301" width="600" height="300"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PU-OQ-Wec">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="E7b-EF-23l"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor recibido desde WebView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R42-1a-cHR">
+                                <rect key="frame" x="70" y="119" width="232" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFS-hv-g0i">
+                                <rect key="frame" x="70" y="148" width="232" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AwH-UK-wUR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3Tq-A0-IW4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AwH-UK-wUR" secondAttribute="trailing" constant="-20" id="55k-RB-BMl"/>
-                            <constraint firstItem="AwH-UK-wUR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="O6b-53-Uxb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AwH-UK-wUR" secondAttribute="bottom" constant="300" id="pCZ-aG-9nk"/>
+                            <constraint firstAttribute="trailing" secondItem="3PU-OQ-Wec" secondAttribute="trailing" id="2Zl-Q0-WVA"/>
+                            <constraint firstItem="3PU-OQ-Wec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Uq-o4-av2"/>
+                            <constraint firstItem="AwH-UK-wUR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U71-WG-D54"/>
+                            <constraint firstAttribute="trailing" secondItem="AwH-UK-wUR" secondAttribute="trailing" id="ovB-A9-yDn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="userName" destination="cFS-hv-g0i" id="ee8-O5-Xjb"/>
                         <outlet property="webView" destination="AwH-UK-wUR" id="MlM-iD-k93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="337"/>
+            <point key="canvasLocation" x="306" y="338"/>
         </scene>
     </scenes>
 </document>
