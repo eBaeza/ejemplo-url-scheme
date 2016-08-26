@@ -14,6 +14,7 @@
 		B730EEF31D6FAB6C001FBCD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B730EEF11D6FAB6C001FBCD8 /* LaunchScreen.storyboard */; };
 		B730EEFE1D6FAB6C001FBCD8 /* ejercicio_url_schemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730EEFD1D6FAB6C001FBCD8 /* ejercicio_url_schemeTests.swift */; };
 		B730EF091D6FAB6C001FBCD8 /* ejercicio_url_schemeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730EF081D6FAB6C001FBCD8 /* ejercicio_url_schemeUITests.swift */; };
+		B730EF171D6FAF4E001FBCD8 /* web in Resources */ = {isa = PBXBuildFile; fileRef = B730EF161D6FAF4E001FBCD8 /* web */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B730EF041D6FAB6C001FBCD8 /* ejercicio-url-schemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ejercicio-url-schemeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B730EF081D6FAB6C001FBCD8 /* ejercicio_url_schemeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ejercicio_url_schemeUITests.swift; sourceTree = "<group>"; };
 		B730EF0A1D6FAB6C001FBCD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B730EF161D6FAF4E001FBCD8 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		B730EEE71D6FAB6C001FBCD8 /* ejercicio-url-scheme */ = {
 			isa = PBXGroup;
 			children = (
+				B730EF161D6FAF4E001FBCD8 /* web */,
 				B730EEE81D6FAB6C001FBCD8 /* AppDelegate.swift */,
 				B730EEEA1D6FAB6C001FBCD8 /* ViewController.swift */,
 				B730EEEC1D6FAB6C001FBCD8 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B730EEF31D6FAB6C001FBCD8 /* LaunchScreen.storyboard in Resources */,
+				B730EF171D6FAF4E001FBCD8 /* web in Resources */,
 				B730EEF01D6FAB6C001FBCD8 /* Assets.xcassets in Resources */,
 				B730EEEE1D6FAB6C001FBCD8 /* Main.storyboard in Resources */,
 			);
