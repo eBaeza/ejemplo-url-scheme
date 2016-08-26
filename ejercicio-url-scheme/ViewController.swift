@@ -36,7 +36,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if let scheme = request.URL?.scheme {
-            NSLog("kjdgjkdgjkgd \(request.URL)")
+            NSLog("URL scheme completo \(request.URL)")
             
             if scheme ==  "knotionscheme" {
                 let urlComponents = NSURLComponents(URL: request.URL!, resolvingAgainstBaseURL: false)
